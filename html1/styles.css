@@ -1,3 +1,9 @@
 table, th, td {
     border: 1px solid black;
   }
+
+#wetterDienst{
+  border:1px solid;
+  border-radius:20px;
+  border-color:transparent;
+}
