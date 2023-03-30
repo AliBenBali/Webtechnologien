@@ -7,3 +7,7 @@ table, th, td {
   border-radius:20px;
   border-color:transparent;
 }
+
+#infotabelle,table, th, td{
+  border: 	none;
+}
