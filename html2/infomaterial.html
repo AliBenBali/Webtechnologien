@@ -13,7 +13,7 @@
             <h1>Infomaterial</h1>
             <p>Bitte senden Sie mir Infomaterial!</p>
          
-        <table id="infoTabelle">
+        <table class="infoTabelle">
             <tr>
               <td>
                 <label for="i1"> Anrede:</label>
@@ -31,7 +31,7 @@
                 <label for="i2">Name:</label>
               </td>
               <td>
-                <input type="text" id="i2" >
+                <input type="text" id="i2" required placeholder="Vorname Nachname " autofocus>
               </td>
             </tr>
             <tr>
@@ -39,7 +39,7 @@
                     <label for="i3">Strasse:</label>
                 </td>
                 <td>
-                    <input type="text" id="i3">
+                    <input type="text" id="i3" required>
                 </td>
             </tr>
             <tr>
@@ -47,7 +47,7 @@
                     <label for="">Plz</label>
                 </td>
                 <td>
-                    <input type="text" maxlength="5" style="width: 40px;" pattern="[0-9]+" >
+                    <input type="text" maxlength="5" style="width: 40px;" pattern="[0-9]+" required>
                 </td>
             </tr>
             <tr>
@@ -55,16 +55,40 @@
                     <label for="">Ort:</label>
                 </td>
                 <td>
-                    <input type="text">
+                    <input type="text" required>
                 </td>
+                <tr>
+                    <td>
+                        <label for="">E-Mail</label>
+                    </td>
+                    <td>
+                        <input type="ema" name="" id="">
+                    </td>
+                </tr>
             </tr>
           </table>
           <br>
           <label >Ich beabsichtige einen Aufenthalt:</label>
-          <br>
-          <input type="radio" id="r1" name="n1"> <label for="r1">im Winter</label> 
-          <br>
-          <input type="radio" id="r2" name="n1"> <label for="r2">im Sommer </label>
+          <br> <br>
+
+        <table class="infoTabelle">
+            <tr>
+                <td>
+                    <label for="">Anreise</label>
+                </td>
+                <td>
+                    <input type="date">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="">Abreise</label>
+                </td>
+                <td>
+                    <input type="date">
+                </td>
+            </tr>
+        </table>
 
           <br> <br>
           <label for="t1">Ich habe folgende Wünsche:</label>

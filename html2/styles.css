@@ -8,6 +8,8 @@ table, th, td {
   border-color:transparent;
 }
 
-#infotabelle,table, th, td{
+
+
+.infotabelle,table, th, td{
   border: 	none;
 }
