@@ -1,0 +1,23 @@
+.normal{
+    font-family: Arial;
+    font-size: 12pt;
+    background-color: white;
+}
+
+.extra{
+    font-family: Verdana;
+    font-size: 10pt;
+    background-color: green;
+}
+
+a:link{
+    color: black;
+}
+
+a:hover{
+    color: green;
+}
+
+a:visited{
+    color: red;
+}
