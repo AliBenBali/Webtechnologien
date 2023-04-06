@@ -1,0 +1,33 @@
+
+.oben{
+    border-top: 10px solid green;
+    border-left: 10px solid green;
+    border-right: 10px solid green;
+    border-bottom: none;
+}
+
+.mitte {
+    border-top: none;
+    border-left: 10px solid white;
+    border-right: 10px solid white;
+    border-bottom: none;
+}
+
+.unten{
+    border-left: 10px solid red;
+    border-right: 10px solid red;
+    border-bottom: 10px solid red;
+}
+
+
+img{
+    width: 280px;
+    padding: 5px;
+    vertical-align: top;
+}
+
+p,h1{
+    width: 280px;
+    padding: 5px;
+    margin: 0;
+}

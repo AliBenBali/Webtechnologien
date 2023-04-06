@@ -1,0 +1,25 @@
+.rot{
+    list-style-type: square;
+    color: red;
+}
+
+.gruen{
+    list-style-type: circle;
+    color: limegreen;
+}
+
+.blau{
+    list-style-type: upper-alpha;
+    color: blue;
+}
+
+.gelb{
+    list-style-type: decimal;
+    color: yellow;
+}
+
+.bild{
+    list-style-image: url("telefon.jpg");
+    width: 10px;
+    height: auto;
+}

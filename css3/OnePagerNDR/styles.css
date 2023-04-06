@@ -1,0 +1,33 @@
+
+.oben{
+    border-top: 10px solid black;
+    border-left: 10px solid black;
+    border-right: 10px solid black;
+    border-bottom: none;
+}
+
+.mitte {
+    border-top: none;
+    border-left: 10px solid red;
+    border-right: 10px solid red;
+    border-bottom: none;
+}
+
+.unten{
+    border-left: 10px solid gold;
+    border-right: 10px solid gold;
+    border-bottom: 10px solid GOLD;
+}
+
+
+img{
+    width: 280px;
+    padding: 5px;
+    vertical-align: top;
+}
+
+p,h1{
+    width: 280px;
+    margin: 0;
+    padding: 5px;
+}
