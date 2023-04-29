@@ -1,0 +1,40 @@
+div.one{
+    background-image: url(100.png);
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 100%;
+}
+
+
+body{
+    color: gold;
+}
+
+div.x{
+    background-image: url(100.png);
+    background-repeat: repeat-x;
+    height: 200px;
+}
+
+div.xy{
+    background-image: url(100.png);
+    background-repeat: repeat;
+    height: 600px;
+}
+
+div.z{
+    background-image: url(100.png);
+    height: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+div.f{
+    background-image: url(100.png);
+    height: 200px;
+    background-repeat: no-repeat;
+    background-position: 50px;
+}
+
+
+
