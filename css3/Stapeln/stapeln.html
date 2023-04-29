@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <meta name="author" content="AliBenBali">
+        <meta name="Beschreibung" content="Bruh">
+        <meta charset="UTF-8" >
+        <title>Beispiel</title>
+
+        <style>
+
+            #zwei{
+                position: fixed;
+                top: 300px;
+                left: 300px;
+            }
+
+            #drei{
+                position: fixed;
+                left: 600px;
+                
+            }
+
+            img{
+                width: 300px;
+                position: absolute;
+            }
+
+            .eins{
+                
+                top: 50px;
+                left: 50px;
+            }
+
+            .zwei{
+                
+                top: 100px;
+                left: 100px;
+            }
+
+            .drei{
+                
+                top: 150px;
+                left: 150px;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div>
+            <img class="eins" style="z-index: 1;" src="köln.jpg" alt="">
+            <img class="zwei" style="z-index: 2;" src="nrw.jpeg" alt="">
+            <img class="drei" style="z-index: 3;" src="ndr.jpg" alt="">
+        </div>
+
+        <div id="zwei"> 
+            <img class="eins" style="z-index: 2;" src="köln.jpg" alt="">
+            <img class="zwei" style="z-index: 3;" src="nrw.jpeg" alt="">
+            <img class="drei" style="z-index: 1;" src="ndr.jpg" alt="">
+        </div>
+
+        <div id="drei">
+            <img class="eins" style="z-index: 3;" src="köln.jpg" alt="">
+            <img class="zwei" style="z-index: 2;" src="nrw.jpeg" alt="">
+            <img class="drei" style="z-index: 1;" src="ndr.jpg" alt="">
+        </div>
+        
+    </body>
+</html>
