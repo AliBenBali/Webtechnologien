@@ -5,16 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      .column {
-        float: left;
-        width: 50%;
-        padding: 2px;
-      }
-      .row::after {
-        content: "";
-        clear: both;
-        display: table;
-      }
+   
 
       @media screen and (min-width: 1024px) {
         img {
@@ -24,7 +15,7 @@
       }
 
       /*Eigentlich ist min-width: 481px, aber Browser geht nicht kleiner*/
-      @media (min-width: 767px) and (max-width: 1023px) {
+      @media (min-width: 601px) and (max-width: 1023px) {
         img {
           width: 200px;
           height: 200px;
@@ -32,7 +23,7 @@
       }
 
       /* Eigentlich 480, aber Browser geht nicht kleiner*/
-      @media (max-width: 765px) {
+      @media (max-width: 600px) {
         img {
           width: 100px;
           height: 100px;
@@ -41,16 +32,16 @@
     </style>
   </head>
   <body>
-    <div class="row">
-      <div class="column">
+    <div>
+      <div>
         <img src="köln.jpg" alt="Image 1" />
         <img src="nrw.jpeg" alt="Image 2" />
       </div>
-      <div class="column">
+      <div>
         <img src="ndroben.jpg" alt="Image 3" />
         <img src="köln.jpg" alt="Image 4" />
       </div>
-      <div class="column">
+      <div>
         <img src="ndr.jpg" alt="Image 3" />
         <img src="nrw.jpeg" alt="Image 4" />
       </div>

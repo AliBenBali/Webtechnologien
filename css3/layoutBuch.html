@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Festes zweispaltiges Layout (absolut)</title>
+    <meta charset="UTF-8" />
+    <style>
+      header,
+      footer {
+        border: 1px solid black;
+        padding: 5px;
+        text-align: center;
+        background-color: sienna;
+        color: white;
+      }
+      #mainnav {
+        border: 1px solid black;
+        padding: 5px;
+        text-align: center;
+        margin-top: 5px;
+        font-weight: bold;
+        background-color: sandybrown;
+      }
+      #sidebar {
+        position: absolute;
+        left: 0;
+        margin: 0;
+        padding: 15px;
+        border: 0;
+        width: 180px;
+      }
+      main {
+        margin: 0;
+        padding: 15px;
+        margin-left: 190px;
+        border: 0;
+        width: 450px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>Zweispalter mit absoluter Positionierung</header>
+    <nav id="mainnav">
+      <a href="#">Home</a> | <a href="#">Blog</a> | <a href="#">Links</a> |
+      <a href="#">About</a> | <a href="#">Kontakt</a>
+    </nav>
+    <aside id="sidebar">
+      <h3>Seitenleiste</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+        ligula eget dolor. Aenean massa.
+      </p>
+      <ul>
+        <li><a href="#">Link 1</a></li>
+        <li><a href="#">Link 2</a></li>
+        <li><a href="#">Link 3</a></li>
+      </ul>
+      <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+    </aside>
+    <main>
+      <article>
+        <h1>Artikel 1</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+          commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
+          et magnis dis parturient montes, nascetur ridiculus mus. Donec quam
+          felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
+          consequat massa quis enim.
+        </p>
+      </article>
+      <article>
+        <h1>Artikel 2</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+          commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
+          et magnis dis parturient montes, nascetur ridiculus mus. Donec quam
+          felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
+          consequat massa quis enim.
+        </p>
+      </article>
+    </main>
+    <footer>Fußzeile</footer>
+  </body>
+</html>
