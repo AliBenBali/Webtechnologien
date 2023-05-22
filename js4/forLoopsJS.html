@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="author" content="AliBenBali" />
+    <meta name="Beschreibung" content="Bruh" />
+    <meta charset="UTF-8" />
+    <script src="script.js"></script>
+    <style>
+      .container {
+        display: flex;
+      }
+
+      .box {
+        width: auto;
+        height: auto;
+        margin: 10px;
+      }
+    </style>
+    <title>Beispiel</title>
+  </head>
+
+  <body>
+    <h1>Schleifen mit JS</h1>
+    <div class="container">
+      <div class="box">
+        <h3>For Schleife</h3>
+        <script>
+          for (let i = 1; i < 11; i++) {
+            document.write("<p>Quadrat der Zahl " + i + ": " + i * i + "</p>");
+          }
+        </script>
+      </div>
+      <div class="box">
+        <h3>While Schleife</h3>
+        <script>
+          let i = 1;
+          while (i < 11) {
+            document.write("<p>Quadrat der Zahl " + i + ": " + i * i + "</p>");
+            i++;
+          }
+        </script>
+      </div>
+      <div class="box">
+        <h3>Do While Schleife</h3>
+        <script>
+          let j = 1;
+          
+          do {
+            document.write("<p>Quadrat der Zahl " + j + ": " + j * j + "</p>");
+            
+            j++;
+          } while (j < 11);
+        </script>
+      </div>
+      <div class="box">
+        <h3>Do While Schleife bis Quadrat 1764 </h3>
+        <script>
+            let m = 1;
+            let sum = 1;
+            do {
+              document.write("<p>Quadrat der Zahl " + m + ": " + m * m + "</p>");
+              sum = m*m
+              m++;
+            } while (sum < 1764);
+          </script>
+      </div>
+    </div>
+  </body>
+</html>
