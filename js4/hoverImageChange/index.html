@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bild austauschen</title>
+    <script>
+      function swapImage() {
+        const image = document.getElementById("my-image");
+        const newImageUrl = "ndr.jpg";
+        const originalImageUrl = "köln.jpg";
+
+        if (image.src === originalImageUrl) {
+          image.src = newImageUrl;
+        } else {
+          image.src = originalImageUrl;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Bild austauschen</h1>
+    <img
+      id="news"
+      onmouseover="this.src='ndr.jpg'"
+      onmouseout="this.src='köln.jpg'"
+      height="100px"
+      width="100px"
+      src="köln.jpg"
+    />
+  </body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="author" content="AliBenBali" />
+    <meta name="Beschreibung" content="Bruh" />
+    <meta charset="UTF-8" />
+    <script src="script.js"></script>
+    <title>Beispiel</title>
+
+    <script>
+      function calculateBMI() {
+        // Get height from the user
+        let height = document.getElementById("height").value;
+
+        // Check if height is within reasonable boundaries
+        if (height <= 50 || height > 251) {
+          alert("Ungültige Körpergröße!");
+          return -1;
+        }
+
+        // Get weight from the user
+        let weight = document.getElementById("weight").value;
+
+        // Check if weight is within reasonable boundaries
+        if (weight <= 3 || weight > 592) {
+          alert("Ungültiges Gewicht!");
+          return -1;
+        }
+
+        // Calculate BMI
+        let heightInMeters = height / 100;
+        let bmi = weight / (heightInMeters * heightInMeters);
+
+        // Display the BMI
+        document.getElementById("bmi").value = bmi.toFixed(2);
+      }
+    </script>
+  </head>
+
+  <body>
+    <form >
+      <h1>BMI berechen</h1>
+      <p>
+        Zur Berechnung Ihres
+        <a href="https://de.wikipedia.org/wiki/Body-Mass-Index"
+          >BMI (Body-Mass-Index)</a
+        >
+        benötigen wir folgende Angaben
+      </p>
+      <br />
+      <label>Gewicht (KG)</label>
+      <input type="text" id="weight" />
+      <br />
+      <label>Körpergröße (CM)</label>
+      <input type="text" id="height" />
+      <button type="button" onclick="calculateBMI()">BMI berechen</button>
+      <button type="reset">Werte löschen</button>
+
+      <br />
+      <label><strong>Ihr BMI beträgt</strong></label>
+      <input type="text" id="bmi" disabled/>
+    </form>
+  </body>
+</html>

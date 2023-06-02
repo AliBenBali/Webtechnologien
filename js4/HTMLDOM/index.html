@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bild bearbeiten</title>
+  <style>
+    .image-container {
+      display: inline-block;
+      padding: 10px;
+    }
+    .border {
+      border: 10px solid red;
+      border-radius: 10px;
+    }
+  </style>
+  <script>
+    function editImage() {
+      // Bild-URLs
+      const originalImageUrl = "ndr.jpg";
+      const newImageUrl = "nrw.jpeg";
+
+      // Unterschrift abfragen
+      const caption = prompt("Welche Unterschrift soll das Bild erhalten?");
+
+      // Rand hinzufügen?
+      const addBorder = confirm("Rand hinzufügen?");
+
+      // Neues Bild anzeigen?
+      const showNewImage = confirm("Neues Bild?");
+
+      // Bildcontainer auswählen
+      const imageContainer = document.getElementById("image-container");
+
+      // Bild-Element erstellen
+      const image = document.createElement("img");
+
+      // Unterschrift hinzufügen
+      image.alt = caption;
+
+      // Rand hinzufügen, falls gewünscht
+      if (addBorder) {
+        image.classList.add("border");
+      }
+
+      // Bildquelle festlegen (Original oder neues Bild)
+      if (showNewImage) {
+        image.src = newImageUrl;
+      } else {
+        image.src = originalImageUrl;
+      }
+
+      // Bild zum Bildcontainer hinzufügen
+      imageContainer.innerHTML = "";
+      imageContainer.appendChild(image);
+    }
+  </script>
+</head>
+<body>
+  <h1>Bild bearbeiten</h1>
+  <div id="image-container" class="image-container">
+    <img src="ndr.jpg" alt="Bild" />
+  </div>
+  <button onclick="editImage()">Bild bearbeiten</button>
+</body>
+</html>

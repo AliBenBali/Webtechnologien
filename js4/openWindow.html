@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Neues Fenster</title>
+  <script>
+    function openNewWindow() {
+      const screenWidth = screen.width;
+      const screenHeight = screen.height;
+      const windowWidth = 200;
+      const windowHeight = 300;
+
+      const leftPosition = (screenWidth - windowWidth) / 2;
+      const topPosition = (screenHeight - windowHeight) / 2;
+
+      const windowFeatures = `width=${windowWidth},height=${windowHeight},left=${leftPosition},top=${topPosition},resizable=yes`;
+
+      window.open("https://www.bvb.de/", "_blank", windowFeatures);
+    }
+  </script>
+</head>
+<body>
+  <button onclick="openNewWindow()">Fenster öffnen</button>
+</body>
+</html>
