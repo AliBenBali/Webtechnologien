@@ -25,7 +25,7 @@ function isValidEmail(email) {
   var isValid = isValidEmail(email);
   console.log(isValid); // Output: true
   
-  var invalidEmail = 'example@com';
+  var invalidEmail = 'example@.com';
   var isInvalid = isValidEmail(invalidEmail);
   console.log(isInvalid); // Output: false
   

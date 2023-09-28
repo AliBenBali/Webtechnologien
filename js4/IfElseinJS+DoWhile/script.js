@@ -19,4 +19,14 @@ function selectionFunction(){
             alert(berufsFrage + "Director");
         }
     }
+
+
+
 }
+
+let start = new Date();
+for(i=0; i < 200; i++){
+    console.log(i);
+}
+let ende = new Date();
+console.log("Du hast " + (ende -start)/1000 + " Sekunden gebraucht")
